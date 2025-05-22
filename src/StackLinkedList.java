@@ -9,7 +9,7 @@ public class StackLinkedList implements Stack{
         top.setNext(previousTop);
     }
     @Override
-    public Object pop() {
+    public Object pop() throws MyEmptyStackException{
         if (this.top == null){
             throw new MyEmptyStackException("stack is empty, you cant pop anythig from empty stackarray");
         }
